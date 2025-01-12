@@ -1,1 +1,90 @@
+flowchart TB
+    subgraph "Guest Agent System"
+        direction TB
+        subgraph "Input Processing"
+            GuestQuery[Guest Query]
+            QueryParser[Query Parser]
+            QueryValidator[Query Validator]
+        end
 
+        subgraph "Search Tools"
+            SearchTool[Search Tool]
+            subgraph "Search Functions"
+                PDFSearch[PDF Search]
+                DataSearch[Data Search]
+                ContextSearch[Context Search]
+            end
+        end
+
+        subgraph "Agent Core"
+            direction TB
+            subgraph "Processing Pipeline"
+                QueryProcessor[Query Processor]
+                ContextBuilder[Context Builder]
+                ResponseGenerator[Response Generator]
+            end
+            
+            subgraph "Tools"
+                InfoRetrieval[Information Retrieval]
+                BookingLookup[Booking Lookup]
+                ServiceRequest[Service Request]
+            end
+        end
+
+        subgraph "LLM Engine"
+            OpenAI[OpenAI API]
+            subgraph "Model Config"
+                Model[Model: GPT-4]
+                Settings[Settings]
+                Prompts[System Prompts]
+            end
+        end
+
+        subgraph "Knowledge Base"
+            GuestGuides[(Guest Guides PDFs)]
+            HotelInfo[(Hotel Information)]
+            FAQs[(Common FAQs)]
+        end
+    end
+
+    %% Data Flow
+    GuestQuery --> QueryParser
+    QueryParser --> QueryValidator
+    QueryValidator --> QueryProcessor
+
+    QueryProcessor --> SearchTool
+    SearchTool --> PDFSearch
+    SearchTool --> DataSearch
+    SearchTool --> ContextSearch
+
+    PDFSearch --> GuestGuides
+    DataSearch --> HotelInfo
+    ContextSearch --> FAQs
+
+    SearchTool --> InfoRetrieval
+    InfoRetrieval --> ContextBuilder
+    BookingLookup --> ContextBuilder
+    ServiceRequest --> ResponseGenerator
+
+    ContextBuilder --> OpenAI
+    OpenAI --> Model
+    OpenAI --> Settings
+    OpenAI --> Prompts
+
+    OpenAI --> ResponseGenerator
+
+    %% Styling
+    classDef input fill:#2ecc71,stroke:#27ae60,stroke-width:2px,color:white
+    classDef search fill:#3498db,stroke:#2980b9,stroke-width:2px,color:white
+    classDef core fill:#e74c3c,stroke:#c0392b,stroke-width:2px,color:white
+    classDef llm fill:#9b59b6,stroke:#8e44ad,stroke-width:2px,color:white
+    classDef storage fill:#f1c40f,stroke:#f39c12,stroke-width:2px,color:white
+
+    class GuestQuery,QueryParser,QueryValidator input
+    class SearchTool,PDFSearch,DataSearch,ContextSearch search
+    class QueryProcessor,ContextBuilder,ResponseGenerator,InfoRetrieval,BookingLookup,ServiceRequest core
+    class OpenAI,Model,Settings,Prompts llm
+    class GuestGuides,HotelInfo,FAQs storage
+
+    %% Add labels
+    linkStyle default stroke-width:2px 

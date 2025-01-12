@@ -4,13 +4,9 @@ Guest Assistant AI is a web application designed to provide personalized assista
 
 ## Screenshots
 
-### Landing Page
-![Landing Page](docs/landing.png)
-*Guests enter their booking number to access personalized assistance*
-
-### Chat Interface
-![Chat Interface](docs/chat.png)
-*AI assistant provides personalized responses based on guest information*
+### Agent System
+![diagram](docs/diagram.png)
+*Guests Guest Agent System*
 
 ## Features
 
@@ -70,9 +66,31 @@ Guest Assistant AI is a web application designed to provide personalized assista
 1. **Enter Booking Number**: On the homepage, enter a valid booking number (e.g., BK001) to proceed to the chat interface.
 2. **Chat with Assistant**: Ask questions or request information, and the assistant will provide personalized responses based on your booking details.
 
+### Landing Page
+
+![Landing Page](docs/landing.png)
+*Guests enter their booking number to access personalized assistance*
+
+### Chat Interface
+
+![Chat Interface](docs/chat.png)
+*AI assistant provides personalized responses based on guest information*
+
 ## Development
 
 - **Hot Reloading**: The application supports hot-reloading for both the API and React app. Changes to the code will automatically reload the respective service.
+
+## Future Enhancements
+
+Here are some potential future enhancements and features that could be added to the Guest Assistant AI:
+
+- **Multi-language Support**: Enable the assistant to communicate in multiple languages to cater to international guests.
+- **Voice Interaction**: Integrate voice recognition and response capabilities for a hands-free experience.
+- **Mobile App Integration**: Develop a mobile application to provide on-the-go access to the assistant.
+- **Advanced Personalization**: Use machine learning to offer more personalized recommendations based on guest preferences and past interactions.
+- **Integration with Hotel Systems**: Connect with hotel management systems for real-time room service, booking modifications, and concierge services.
+- **Security Enhancements**: Implement biometric authentication and enhanced data encryption for improved security.
+- **Analytics Dashboard**: Provide hotel staff with insights into guest interactions and preferences through an analytics dashboard.
 
 ## Contributing
 
