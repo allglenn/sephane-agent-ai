@@ -1,0 +1,222 @@
+{
+    "BK001": {
+        "guest_name": "Alice Johnson",
+        "guest_age": 24,
+        "room_number": "478",
+        "check_in": "2025-01-23 10:00",
+        "check_out": "2025-01-29 10:00",
+        "preferences": {
+            "room_type": "Family Suite",
+            "capacity": 6,
+            "children": true,
+            "dietary": "Vegan",
+            "special_requests": [
+                "Early check-in",
+                "Airport shuttle"
+            ],
+            "preferred_activities": [
+                "Snorkeling",
+                "Wine Tasting",
+                "Spa Appointment"
+            ]
+        }
+    },
+    
+    "BK002": {
+        "guest_name": "Robert Smith",
+        "guest_age": 60,
+        "room_number": "422",
+        "check_in": "2025-01-25 10:02",
+        "check_out": "2025-01-28 10:02",
+        "preferences": {
+            "room_type": "Ocean View Suite",
+            "capacity": 4,
+            "children": false,
+            "dietary": "No Preference",
+            "special_requests": [
+                "Extra pillows",
+                "Early check-in",
+                "Crib for baby"
+            ],
+            "preferred_activities": [
+                "Golfing",
+                "Snorkeling"
+            ]
+        }
+    },
+    "BK003": {
+        "guest_name": "Emily Davis",
+        "guest_age": 21,
+        "room_number": "382",
+        "check_in": "2025-01-26 10:02",
+        "check_out": "2025-02-09 10:02",
+        "preferences": {
+            "room_type": "Deluxe Room",
+            "capacity": 2,
+            "children": false,
+            "dietary": "No Preference",
+            "special_requests": [
+                "Early check-in",
+                "Crib for baby"
+            ],
+            "preferred_activities": [
+                "Wine Tasting",
+                "Golfing"
+            ]
+        }
+    },
+    "BK004": {
+        "guest_name": "Michael Brown",
+        "guest_age": 41,
+        "room_number": "415",
+        "check_in": "2025-01-14 10:02",
+        "check_out": "2025-02-01 10:02",
+        "preferences": {
+            "room_type": "Ocean View Suite",
+            "capacity": 4,
+            "children": false,
+            "dietary": "Gluten-Free",
+            "special_requests": [
+                "Airport shuttle",
+                "Crib for baby",
+                "Extra pillows"
+            ],
+            "preferred_activities": [
+                "Snorkeling"
+            ]
+        }
+    },
+    "BK005": {
+        "guest_name": "Jessica Wilson",
+        "guest_age": 48,
+        "room_number": "200",
+        "check_in": "2025-01-20 10:02",
+        "check_out": "2025-01-29 10:02",
+        "preferences": {
+            "room_type": "Family Suite",
+            "capacity": 6,
+            "children": true,
+            "dietary": "Vegetarian",
+            "special_requests": [
+                "Crib for baby",
+                "Early check-in"
+            ],
+            "preferred_activities": [
+                "Golfing",
+                "Snorkeling",
+                "Wine Tasting"
+            ]
+        }
+    },
+    "BK006": {
+        "guest_name": "David Martinez",
+        "guest_age": 41,
+        "room_number": "223",
+        "check_in": "2025-01-19 10:02",
+        "check_out": "2025-02-06 10:02",
+        "preferences": {
+            "room_type": "Penthouse",
+            "capacity": 6,
+            "children": false,
+            "dietary": "Gluten-Free",
+            "special_requests": [
+                "Airport shuttle",
+                "Allergy-free room",
+                "Early check-in"
+            ],
+            "preferred_activities": [
+                "Golfing",
+                "Wine Tasting"
+            ]
+        }
+    },
+    "BK007": {
+        "guest_name": "Sarah Lee",
+        "guest_age": 28,
+        "room_number": "338",
+        "check_in": "2025-01-14 10:02",
+        "check_out": "2025-02-11 10:02",
+        "preferences": {
+            "room_type": "Penthouse",
+            "capacity": 6,
+            "children": false,
+            "dietary": "Vegetarian",
+            "special_requests": [
+                "Late check-out",
+                "Airport shuttle",
+                "Early check-in"
+            ],
+            "preferred_activities": [
+                "City Tour",
+                "Snorkeling",
+                "Spa Appointment"
+            ]
+        }
+    },
+    "BK008": {
+        "guest_name": "James Anderson",
+        "guest_age": 55,
+        "room_number": "452",
+        "check_in": "2025-01-24 10:02",
+        "check_out": "2025-02-05 10:02",
+        "preferences": {
+            "room_type": "Deluxe Room",
+            "capacity": 2,
+            "children": false,
+            "dietary": "No Preference",
+            "special_requests": [
+                "Early check-in",
+                "Airport shuttle"
+            ],
+            "preferred_activities": [
+                "Wine Tasting",
+                "City Tour"
+            ]
+        }
+    },
+    "BK009": {
+        "guest_name": "Patricia Thomas",
+        "guest_age": 37,
+        "room_number": "118",
+        "check_in": "2025-01-18 10:02",
+        "check_out": "2025-02-10 10:02",
+        "preferences": {
+            "room_type": "Deluxe Room",
+            "capacity": 2,
+            "children": false,
+            "dietary": "Halal",
+            "special_requests": [
+                "Allergy-free room",
+                "Extra pillows",
+                "Early check-in"
+            ],
+            "preferred_activities": [
+                "Golfing",
+                "City Tour",
+                "Wine Tasting"
+            ]
+        }
+    },
+    "BK010": {
+        "guest_name": "Linda Jackson",
+        "guest_age": 50,
+        "room_number": "242",
+        "check_in": "2025-01-13 10:02",
+        "check_out": "2025-02-02 10:02",
+        "preferences": {
+            "room_type": "Standard Room",
+            "capacity": 2,
+            "children": true,
+            "dietary": "Vegetarian",
+            "special_requests": [
+                "Late check-out",
+                "Early check-in"
+            ],
+            "preferred_activities": [
+                "City Tour",
+                "Golfing",
+                "Wine Tasting"
+            ]
+        }
+    }
+}

@@ -1,0 +1,38 @@
+version: '3.8'
+services:
+  api:
+    build: 
+      context: ./api
+      dockerfile: Dockerfile
+    ports:
+      - "${PORT:-5001}:${PORT:-5001}"
+    volumes:
+      - ./api:/app
+      - /app/__pycache__
+    env_file:
+      - ./api/.env
+    environment:
+      - FLASK_APP=app.py
+      - FLASK_ENV=development
+      - FLASK_DEBUG=1
+      - PORT=${PORT:-5001}
+    # Enable real-time reload using PORT env variable
+    command: sh -c "flask run --host=0.0.0.0 --port=${PORT:-5001} --reload"
+  react-app:
+    build: 
+      context: ./react-app
+      dockerfile: Dockerfile
+    ports:
+      - "3000:3000"
+    volumes:
+      - ./react-app:/app
+      - /app/node_modules
+    environment:
+      - REACT_APP_API_URL=http://localhost:5001
+      - CHOKIDAR_USEPOLLING=true  # Enable hot reload in Docker
+    depends_on:
+      - api
+  redis:
+    image: "redis:alpine"
+    ports:
+      - "6379:6379"
