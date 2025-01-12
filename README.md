@@ -2,7 +2,7 @@
 
 Guest Assistant AI is a web application designed to provide personalized assistance to hotel guests. It uses OpenAI's language models to answer guest queries and provide information based on their booking details.
 
-## Screenshots
+
 
 ### Agent System
 ![diagram](docs/diagram.png)
@@ -65,6 +65,8 @@ Guest Assistant AI is a web application designed to provide personalized assista
 
 1. **Enter Booking Number**: On the homepage, enter a valid booking number (e.g., BK001) to proceed to the chat interface.
 2. **Chat with Assistant**: Ask questions or request information, and the assistant will provide personalized responses based on your booking details.
+
+## Screenshots
 
 ### Landing Page
 
