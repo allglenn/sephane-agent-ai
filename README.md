@@ -43,7 +43,7 @@ Guest Assistant AI is a web application designed to provide personalized assista
 1. Clone the repository:
 
    ```bash
-   git clone https://github.com/yourusername/guest-assistant-ai.git
+   git clone https://github.com/allglenn/sephane-agent-ai.git
    cd guest-assistant-ai
    ```
 
